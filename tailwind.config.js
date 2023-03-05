@@ -20,6 +20,7 @@ module.exports = {
       margin: {
         '10': '10vw',
         '20': '20vw',
+        '25': '25vw',
         '30': '30vw',
         '40': '40vw',
         '50': '50vw'
@@ -38,13 +39,17 @@ module.exports = {
         800: 800,
         900: 900,
       },
-      width:{
-        30: "30vw"
+      width: {
+        '15vw': '15vw',
+        '20vw': '18vw',
+        '30vw': "30vw",
+        '95vw': '95vw'
       },
-      screens:{
-        'mobile' : '360px',
-        'tablet' : '1280px',
-        'desktop': '1440px'
+      screens: {
+        'mobile-360': '360px',
+        'mobile-720': '720px',
+        'desktop-1440': '1440px',
+        'desktop-1920': '1920px',
       }
 
     },
