@@ -4,11 +4,12 @@ export default function SearchBar() {
         <>
             <div className="bg-white rounded-lg px-5  mobile-720:ml-1 desktop-1440:ml-64 desktop-1920:ml-96">
                 <input
-                    className="border-0 px-5 py-3  desktop-1920:w-30vw desktop-1440:w-20vw mobile-720:w-20vw focus:outline-none"
+                    className="border-0 px-5 py-3  desktop-1920:w-30vw desktop-1440:w-20vw mobile-720:w-20vw mobile-360:w-10/12 focus:outline-none"
+
                     type="text"
                     placeholder="Search your product"
                 />
-                <button className="text-green-6 bg-white mt-3">
+                <button className="text-green-6 bg-white mt-auto mb-auto">
                     {" "}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className="hover:fill-green-5">
                         <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
