@@ -3,7 +3,6 @@ import SearchBar from "./searchBar";
 
 export default function Navbar() {
   const [sideBar, setSideBar] = useState(false);
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -17,20 +16,20 @@ export default function Navbar() {
     };
   }, [windowWidth]);
 
-  console.log(windowWidth);
-
   return (
     <>
-      {/* 
-        * Conditional Rendering 
-      */}
+      {/*
+       * Conditional Rendering
+       */}
 
       {!sideBar ? (
         /*
          * NavBar
          */
         <div className="bg-green-10 flex h-20 items-center">
-          <h1 className="text-white text-4xl font-700 mx-9">Logo</h1>
+          <a href="/">
+            <h1 className="text-white text-4xl font-700 mx-9">Logo</h1>
+          </a>
 
           <a href="\" className="text-white mx-9">
             Home
@@ -71,12 +70,10 @@ export default function Navbar() {
             </button>
           )}
         </div>
-
+      ) : (
         /*
          * End of NavBar
          */
-
-      ) : (
 
         /*
          * SideBar
@@ -100,7 +97,6 @@ export default function Navbar() {
                       </svg>
                     </button>
                   </td>
-
                 </tr>
                 <tr>
                   <td className="py-5">
@@ -111,20 +107,14 @@ export default function Navbar() {
                 </tr>
                 <tr>
                   <td className="py-5">
-                    <a
-                      href="\"
-                      className="text-4xl text-white"
-                    >
+                    <a href="\" className="text-4xl text-white">
                       LogIn
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td className="py-5">
-                    <a
-                      href="\"
-                      className="text-4xl text-white"
-                    >
+                    <a href="\" className="text-4xl text-white">
                       SignUp
                     </a>
                   </td>
